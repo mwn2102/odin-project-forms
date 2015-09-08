@@ -1,0 +1,13 @@
+<%= form_for @user do |f| %>
+  <%=f.label :username, "Your name" %>
+  <%=f.text_field :username, placeholder: "mike nels" %>
+  
+  <%=f.label :email, "Your email" %>
+  <%=f.text_field :email, value: "mwn2102@gmail.com" %>
+
+  <%=f.label :password %>
+  <%=f.text_field :password %>
+
+  <%= f.submit %>
+  
+<%end%>
